@@ -1,13 +1,5 @@
-import React from 'react';
+interface MainPageProps {}
 
-interface MainPageProps {
-  
+export function MainPage({}: MainPageProps) {
+  return <div>main</div>;
 }
-
-export const MainPage: React.FC<MainPageProps> = ({  }) => {
-  return (
-    <div>
-      123
-    </div>
-  );
-};
