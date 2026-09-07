@@ -19,15 +19,16 @@
   :root {
     --background: oklch(0.2134 0 0);
     --foreground: oklch(1 0 0);
-    --muted-foreground: oklch(46.76% 0.00005 271.152);
+    --muted-foreground: oklch(69.926% 0.00008 271.152);
+    --super-muted-foreground: oklch(46.76% 0.00005 271.152);
 
-    --primary: oklch(0.6 0.15 250);
-    --primary-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.2134 0 0);
+    --primary-foreground: oklch(1 0 0);
 
     --destructive: oklch(0.6 0.2 25);
     --destructive-foreground: oklch(0.985 0 0);
 
-    --radius: 0.5rem;
+    --radius: 1.5rem;
   }
 
   .dark {

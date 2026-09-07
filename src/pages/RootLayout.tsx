@@ -49,7 +49,7 @@ export const NavBar = ({ className }: { className?: string }) => {
             className={({ isActive }) =>
               cn(
                 'flex flex-col items-center justify-center gap-1 text-xs md:text-sm',
-                'text-muted-foreground hover:text-foreground transition-colors',
+                'text-muted-foreground/50 hover:text-foreground transition-all',
                 isActive && 'text-foreground',
                 item.align
               )
