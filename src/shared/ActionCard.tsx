@@ -12,24 +12,27 @@ export function ActionCard({
   title,
   desc,
   actions,
-  headerAddon: addon,
+  headerAddon,
   className,
   ...props
 }: ActionCardProps) {
   return (
     <div
-      className={cn('bg-primary text-primary-foreground p-5 rounded-lg', className)}
+      className={cn(
+        'bg-primary text-primary-foreground rounded-lg p-5',
+        className
+      )}
       {...props}
     >
       {/* Шапка */}
       <div className="flex items-start justify-between">
         <div>
           {title && <h3 className="text-lg font-bold">{title}</h3>}
-          {desc && <p className="text-sm text-muted-foreground">{desc}</p>}
+          {desc && <p className="text-muted-foreground text-sm">{desc}</p>}
         </div>
 
         {/*бейдж или кнопка-вопросик*/}
-        {addon && <div>{addon}</div>}
+        {headerAddon && <div>{headerAddon}</div>}
       </div>
 
       {/* Зона кнопок */}
