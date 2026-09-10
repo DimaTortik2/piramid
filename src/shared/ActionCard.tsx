@@ -27,7 +27,7 @@ export function ActionCard({
       {/* Шапка */}
       <div className="flex items-start justify-between">
         <div>
-          {title && <h3 className="text-lg font-bold">{title}</h3>}
+          {title && <h3 className="text-lg">{title}</h3>}
           {desc && <p className="text-muted-foreground text-sm">{desc}</p>}
         </div>
 

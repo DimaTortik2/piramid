@@ -1,5 +1,5 @@
 import { LecturesPage } from '@/pages/LecturesPage';
-import { MainPage } from '@/pages/MainPage';
+import { MainPage } from '@/pages/MainPage/MainPage';
 import { RootLayout } from '@/pages/RootLayout';
 import { TrainingPage } from '@/pages/TrainingPage';
 import { createBrowserRouter } from 'react-router-dom';

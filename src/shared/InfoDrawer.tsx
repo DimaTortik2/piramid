@@ -37,7 +37,7 @@ export function InfoDrawer({
         <Drawer.Overlay className="fixed inset-0 z-50 bg-black/60" />
 
         <Drawer.Content
-          className={`fixed inset-x-0 bottom-0 z-50 mx-auto mt-24 flex w-full max-w-[440px] flex-col rounded-t-[32px] bg-[#1C1C1E] transition-all outline-none ${
+          className={`fixed inset-x-0 bottom-0 z-50 mx-auto mt-24 flex w-full max-w-125 flex-col rounded-t-[32px] bg-[#1C1C1E] transition-all outline-none ${
             snapPoints && snapPoints.length > 0 ? 'h-[90vh]' : 'max-h-[90vh]'
           }`}
         >

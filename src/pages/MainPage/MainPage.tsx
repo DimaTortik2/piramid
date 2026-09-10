@@ -1,3 +1,4 @@
+import { WelcomeBanner } from '@/pages/MainPage/ui/WelcomeBanner';
 import { ActionCard } from '@/shared/ActionCard';
 import { Button } from '@/shared/Button';
 import { Circle } from '@/shared/Circle';
@@ -8,7 +9,8 @@ interface MainPageProps {}
 
 export function MainPage({}: MainPageProps) {
   return (
-    <div className="mx-auto flex min-h-full w-full max-w-125 flex-col gap-2 py-2">
+    <div className="mx-auto flex min-h-full w-full max-w-125 flex-col gap-4 py-2 justify-end">
+      <WelcomeBanner pyramidClassName="w-[17.5rem]" />
       <ActionCard
         title={<>История матчей</>}
         desc={
