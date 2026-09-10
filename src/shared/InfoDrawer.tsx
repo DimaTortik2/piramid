@@ -1,3 +1,4 @@
+import { Button } from '@/shared/Button';
 import type { ReactNode } from 'react';
 import { Drawer } from 'vaul';
 
@@ -37,7 +38,7 @@ export function InfoDrawer({
         <Drawer.Overlay className="fixed inset-0 z-50 bg-black/60" />
 
         <Drawer.Content
-          className={`fixed inset-x-0 bottom-0 z-50 mx-auto mt-24 flex w-full max-w-125 flex-col rounded-t-[32px] bg-[#1C1C1E] transition-all outline-none ${
+          className={`bg-background fixed inset-x-0 bottom-0 z-50 mx-auto mt-24 flex w-full max-w-125 flex-col rounded-t-[32px] transition-all outline-none ${
             snapPoints && snapPoints.length > 0 ? 'h-[90vh]' : 'max-h-[90vh]'
           }`}
         >
@@ -50,20 +51,15 @@ export function InfoDrawer({
 
           {/* Контент со скроллом */}
           <div className="flex-1 overflow-y-auto px-6 py-4">
-            <div className="text-[15px] leading-relaxed whitespace-pre-wrap text-[#EBEBF5]/80">
+            <div className="text-foreground text-[15px] leading-relaxed whitespace-pre-wrap">
               {content}
             </div>
           </div>
 
           {/* Кнопка закрытия */}
-          <div className="pb-safe-or-8 shrink-0 px-6 pt-4">
+          <div className="pb-safe-or-4 shrink-0 px-6 pt-4">
             <Drawer.Close asChild>
-              <button
-                type="button"
-                className="w-full rounded-full bg-white py-4 text-[17px] font-semibold text-black transition-all outline-none hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-white/50 active:scale-[0.98]"
-              >
-                Закрыть
-              </button>
+              <Button>Закрыть</Button>
             </Drawer.Close>
           </div>
         </Drawer.Content>

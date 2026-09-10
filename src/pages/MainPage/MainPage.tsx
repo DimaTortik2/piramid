@@ -4,12 +4,13 @@ import { Button } from '@/shared/Button';
 import { Circle } from '@/shared/Circle';
 import { InfoDrawer } from '@/shared/InfoDrawer';
 import { QuestionMarkIcon } from '@phosphor-icons/react';
+import { toast } from 'sonner';
 
 interface MainPageProps {}
 
 export function MainPage({}: MainPageProps) {
   return (
-    <div className="mx-auto flex min-h-full w-full max-w-125 flex-col gap-4 py-2 justify-end">
+    <div className="mx-auto flex min-h-full w-full max-w-125 flex-col justify-end gap-4 py-2">
       <WelcomeBanner pyramidClassName="w-[17.5rem]" />
       <ActionCard
         title={<>История матчей</>}
@@ -17,18 +18,26 @@ export function MainPage({}: MainPageProps) {
           <>Статистика по матчам, когда вы использовали дисплей для матча</>
         }
         actions={
-          <Button onClick={() => console.log('Смотреть')}>Смотреть</Button>
+          <Button onClick={() => toast.warning('Добавим "смотреть" позже')}>
+            Смотреть
+          </Button>
         }
         headerAddon={
-          <button onClick={() => console.log('Сыграно столько матчей')}>
+          <button onClick={() => toast.info('Вы играли столько матчей')}>
             <Circle>5</Circle>
           </button>
-        } // Сделаю тост
+        }
       />
       <ActionCard
         title={<>Дисплей для матча</>}
         desc={<>Вы можете сыграть с другом, а мы будем вам помогать</>}
-        actions={<Button onClick={() => console.log('Играть')}>Играть</Button>}
+        actions={
+          <Button
+            onClick={() => toast.warning('Добавим "дисплей для игры" позже')}
+          >
+            Играть
+          </Button>
+        }
         headerAddon={
           <InfoDrawer
             content={

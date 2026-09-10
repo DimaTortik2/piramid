@@ -1,5 +1,5 @@
 interface LecturesPageProps {}
 
 export function LecturesPage({}: LecturesPageProps) {
-  return <div>lectures</div>;
+  return <div>Лекции разрабатываются</div>;
 }

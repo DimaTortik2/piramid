@@ -1,5 +1,5 @@
 interface TrainingPageProps {}
 
 export function TrainingPage({}: TrainingPageProps) {
-  return <div>training</div>;
+  return <div>Страница разрабатывается</div>;
 }

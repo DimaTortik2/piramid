@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'tailwindcss-safe-area';
+@import 'sonner/dist/styles.css';
 
 @theme {
   --color-background: var(--background);
@@ -45,6 +46,10 @@
 }
 
 @layer base {
+  html, body {
+    overscroll-behavior-y: none;
+  }
+
   body {
     background-color: var(--background);
     color: var(--foreground);
